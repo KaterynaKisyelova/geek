@@ -1,0 +1,83 @@
+@import 'libs/normalize';
+@import 'libs/font';
+
+:root {
+    --text-color: #0D0D0D;
+    --main-color: #FF5050;
+    --back-color-1: #FFF6F6;
+    --back-color-2: #F8F8F8;
+    --descr-color: #999999;
+}
+@mixin text-16 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+* {
+    font-family: 'Graphik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    pointer-events: visible;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--back-color-2);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+.descr {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--descr-color);
+    &_on-bg {
+        color: #fff;
+    }
+    &_sub {
+        color: var(--text-color);
+        margin-top: 30px;
+        text-align: center;
+        span {
+            font-weight: 500;
+        }
+    }
+}
+.title {
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'DIN Pro';
+    line-height: 24px;
+    font-size: 26px;
+    &_left {
+        text-align: left;
+    }
+}
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/limited';
+@import 'blocks/headline';
+@import 'blocks/box';
+@import 'blocks/on';
+@import 'blocks/every-day';
+@import 'blocks/plan';
+@import 'blocks/first';
+@import 'blocks/slider';
+@import 'blocks/recent';
+@import 'blocks/compliment';
+@import 'blocks/feature';
+@import 'blocks/footer';
+@import 'blocks/form';
+@import 'blocks/media';

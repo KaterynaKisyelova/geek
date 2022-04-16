@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Condensed Bold'), local('DIN-Pro-Condensed-Bold'),
+        url('DINPro-CondensedBold.woff2') format('woff2'),
+        url('DINPro-CondensedBold.woff') format('woff'),
+        url('DINPro-CondensedBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

@@ -1,0 +1,27 @@
+.feature {
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__headline {
+        letter-spacing: 0.05em;
+        font-size: 20px;
+        line-height: 18px;
+    }
+    &__fandom {
+        max-height: 65px;
+        margin: 0 35px;
+        &:first-child {
+            margin: 0 35px 0 0;
+        }
+        &:last-child {
+            margin: 0 0 0 35px;
+        }
+        img {
+            max-height: 100%;
+        }
+    }
+}

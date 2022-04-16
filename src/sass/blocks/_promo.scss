@@ -1,0 +1,51 @@
+.promo {
+    position: relative;
+    background-color: var(--main-color);
+    height: 700px;
+    overflow: hidden;
+    padding-left: 30px;
+    &__wrapper {
+        max-width: 1454px;
+        margin: 0 auto;
+        color: #FFFFFF;
+        margin-top: 200px;
+    }
+    &__headline {
+        font-family: 'DIN pro', sans-serif;
+        font-size: 100px;
+        line-height: 91px;
+        margin: 0 0 30px 0;
+    }
+    &__descr {
+        width: 378px;
+    }
+    &__bg {
+        position: absolute;
+        right: -30px;
+        bottom: -5px;
+        width: 57%;
+        source, img {
+            width: 100%;
+        }
+    }  
+    &__snowflakes {
+        position: absolute;
+        max-width: 1220px;
+        top: 100px;
+        right: 0;
+        height: auto;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    } 
+    &__btn {
+        font-family: 'DIN pro', sans-serif;
+        background-color: #fff;
+        color: var(--text-color);
+        margin-top: 50px;
+        &:hover {
+            box-shadow: 0 0 10px #fff;
+        }
+    }
+}

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekFUEL</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/d11d4dc23c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item-plus menu__item-plus_1" href="#">TEE CLUB</a></li>
+                <li class="menu__item"><a class="menu__item-plus menu__item-plus_2" href="#">SHOP</a></li>
+                <li class="menu__item"><a href="#">GHOSTBUSTERS</a></li>
+                <li class="menu__item"><a href="#">&#127873; GIFT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__search header__search_small">
+                <form class="header__search-form header__search-form_1">
+                    <input type="text" class="header__search-input" placeholder="Search">
+                    <button class="header__search-btn">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.9007 17.5992L16.3065 15.0142C17.7129 13.2768 18.3989 11.066 18.2232 8.83766C18.0475 6.60934 17.0234 4.5334 15.3622 3.0379C13.7009 1.5424 11.5291 0.741378 9.29467 0.800002C7.0602 0.858626 4.93341 1.77243 3.35286 3.35298C1.77231 4.93353 0.858504 7.06032 0.79988 9.29479C0.741256 11.5293 1.54228 13.701 3.03778 15.3623C4.53328 17.0236 6.60922 18.0476 8.83754 18.2233C11.0659 18.399 13.2767 17.713 15.014 16.3067L17.599 18.9008C17.6843 18.9868 17.7856 19.0549 17.8974 19.1015C18.0091 19.148 18.1289 19.172 18.2499 19.172C18.3709 19.172 18.4907 19.148 18.6024 19.1015C18.7141 19.0549 18.8155 18.9868 18.9007 18.9008C18.9866 18.8156 19.0548 18.7142 19.1014 18.6025C19.1479 18.4908 19.1719 18.371 19.1719 18.25C19.1719 18.129 19.1479 18.0092 19.1014 17.8975C19.0548 17.7858 18.9866 17.6844 18.9007 17.5992ZM2.66655 9.54167C2.66655 8.18192 3.06976 6.85271 3.82519 5.72212C4.58063 4.59154 5.65436 3.71035 6.9106 3.19C8.16684 2.66964 9.54917 2.5335 10.8828 2.79877C12.2164 3.06404 13.4414 3.71882 14.4029 4.68031C15.3644 5.6418 16.0192 6.8668 16.2844 8.20042C16.5497 9.53404 16.4136 10.9164 15.8932 12.1726C15.3729 13.4289 14.4917 14.5026 13.3611 15.258C12.2305 16.0135 10.9013 16.4167 9.54155 16.4167C7.71818 16.4167 5.9695 15.6923 4.68019 14.403C3.39087 13.1137 2.66655 11.365 2.66655 9.54167Z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <div class="header__logo">
+            <img src="icons/logo.png" alt="GEEKFUEL">
+        </div>
+        <nav class="header__links">
+            <div class="header__link">
+                <a href="#" class="header__login">LOGIN</a>
+            </div>
+            <div class="header__search header__search_big">
+                <form class="header__search-form header__search-form_2">
+                    <input type="text" class="header__search-input" placeholder="Search" id="search" name="search">
+                    <button class="header__search-btn">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.9007 17.5992L16.3065 15.0142C17.7129 13.2768 18.3989 11.066 18.2232 8.83766C18.0475 6.60934 17.0234 4.5334 15.3622 3.0379C13.7009 1.5424 11.5291 0.741378 9.29467 0.800002C7.0602 0.858626 4.93341 1.77243 3.35286 3.35298C1.77231 4.93353 0.858504 7.06032 0.79988 9.29479C0.741256 11.5293 1.54228 13.701 3.03778 15.3623C4.53328 17.0236 6.60922 18.0476 8.83754 18.2233C11.0659 18.399 13.2767 17.713 15.014 16.3067L17.599 18.9008C17.6843 18.9868 17.7856 19.0549 17.8974 19.1015C18.0091 19.148 18.1289 19.172 18.2499 19.172C18.3709 19.172 18.4907 19.148 18.6024 19.1015C18.7141 19.0549 18.8155 18.9868 18.9007 18.9008C18.9866 18.8156 19.0548 18.7142 19.1014 18.6025C19.1479 18.4908 19.1719 18.371 19.1719 18.25C19.1719 18.129 19.1479 18.0092 19.1014 17.8975C19.0548 17.7858 18.9866 17.6844 18.9007 17.5992ZM2.66655 9.54167C2.66655 8.18192 3.06976 6.85271 3.82519 5.72212C4.58063 4.59154 5.65436 3.71035 6.9106 3.19C8.16684 2.66964 9.54917 2.5335 10.8828 2.79877C12.2164 3.06404 13.4414 3.71882 14.4029 4.68031C15.3644 5.6418 16.0192 6.8668 16.2844 8.20042C16.5497 9.53404 16.4136 10.9164 15.8932 12.1726C15.3729 13.4289 14.4917 14.5026 13.3611 15.258C12.2305 16.0135 10.9013 16.4167 9.54155 16.4167C7.71818 16.4167 5.9695 15.6923 4.68019 14.403C3.39087 13.1137 2.66655 11.365 2.66655 9.54167Z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="header__favorite">
+                <a href="#">
+                    <svg viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1562 0.546875C14.2715 0.546875 12.6335 1.4096 11.4191 3.04173C11.2631 3.25146 11.1237 3.46127 11 3.66482C10.8763 3.46123 10.7369 3.25146 10.5809 3.04173C9.36659 1.4096 7.72849 0.546875 5.84375 0.546875C2.35323 0.546875 0 3.35071 0 6.78817C0 11.2744 4.26388 14.0988 10.4498 19.2539C10.6092 19.3867 10.8046 19.4531 11 19.4531C11.1954 19.4531 11.3908 19.3867 11.5502 19.2539C17.7347 14.1002 22 11.2749 22 6.78817C22 3.35273 19.6488 0.546875 16.1562 0.546875ZM11 17.4768C5.30398 12.7644 1.71875 10.2671 1.71875 6.78817C1.71875 4.54078 3.13569 2.26562 5.84375 2.26562C7.16714 2.26562 8.28704 2.85864 9.17237 4.02825C9.87379 4.95495 10.1653 5.91139 10.1747 5.94268C10.2812 6.3098 10.6176 6.5625 11 6.5625C11.383 6.5625 11.7198 6.30903 11.8258 5.94096C11.8364 5.90422 12.9218 2.26562 16.1562 2.26562C18.8643 2.26562 20.2812 4.54078 20.2812 6.78817C20.2812 10.2704 16.6779 12.7796 11 17.4768Z"/>
+                    </svg>
+                </a>
+            </div>
+           <div class="header__cart">
+                <a href="#">
+                    <svg viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.4219 5.15625H15.8031C15.4617 2.2568 12.9896 0 10 0C7.01036 0 4.53829 2.2568 4.1969 5.15625H1.57812C1.10349 5.15625 0.71875 5.54099 0.71875 6.01562V21.1406C0.71875 21.6153 1.10349 22 1.57812 22H18.4219C18.8965 22 19.2812 21.6153 19.2812 21.1406V6.01562C19.2812 5.54099 18.8965 5.15625 18.4219 5.15625ZM10 1.71875C12.0403 1.71875 13.7391 3.20783 14.0674 5.15625H5.93262C6.2609 3.20783 7.95967 1.71875 10 1.71875ZM17.5625 20.2812H2.4375V6.875H4.15625V9.45312C4.15625 9.92776 4.54099 10.3125 5.01562 10.3125C5.49026 10.3125 5.875 9.92776 5.875 9.45312V6.875H14.125V9.45312C14.125 9.92776 14.5097 10.3125 14.9844 10.3125C15.459 10.3125 15.8438 9.92776 15.8438 9.45312V6.875H17.5625V20.2812Z"/>
+                    </svg>
+                </a>
+           </div>
+        </nav>
+    </header>
+    <section class="promo">
+        <div class="promo__wrapper">
+            <h1 class="promo__headline">GET YOUR<br>GEEK ON!</h1>
+            <p class="descr descr_on-bg promo__descr">Come on in to score your fan favorite tees, figures, and geeky essentials you won't find anywhere else!
+            </p>
+            <button class="btn promo__btn">shop all</button>
+        </div>
+        <div class="promo__snowflakes">
+            <picture>
+                <source media="(max-width: 768px)" srcset="img/snowflakes-mini.svg">
+                <source media="(min-width: 769px)" srcset="icons/snowflakes.svg">
+                <img src="icons/snowflakes.svg" alt="snowflakes">
+            </picture>
+        </div>
+        <picture class="promo__bg">
+            <source media="(max-width: 576px)" srcset="img/bg_mini.png">
+            <source media="(min-width: 577px)" srcset="img/bg_.png">
+            <img src="img/bg_.png" alt="t-shirts">
+        </picture>
+    </section>
+    <section class="limited">
+        <div class="container">
+            <div class="limited__wrapper">
+                <h2 class="headline">HERE'S WHAT&nbsp;
+                    <br class="limited_big-screen">YOU'LL GET&nbsp;
+                    <br class="limited_small-screen">IN OUR&nbsp; 
+                    <br class="limited_big-screen"><span>LIMITED TIME OFFER</span></h2>
+                <ul class="limited__list">
+                    <li class="descr limited__list-item">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc.</li>
+                    <li class="descr limited__list-item">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </li>
+                    <li class="descr limited__list-item">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </li>
+                    <li class="descr limited__list-item">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="box">
+        <div class="container box__container">
+            <svg viewBox="0 0 1220 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 13.9124C290.577 12.123 373.6 -0.850549 547.731 0.0441728C721.862 0.938895 766.607 11.9738 908.932 9.1405C1025.39 6.82212 1106.84 13.7893 1175.72 15.2545H1220C1205.7 15.6339 1191.02 15.5799 1175.72 15.2545H0V13.9124Z" fill="#FFF6F6"/>
+            </svg>
+            <div class="box__wrapper">
+                <div class="descr box__descr">
+                    <h2 class="headline box__headline">WHAT'S IN A BOX?</h2>
+                    <div class="box__descr-items">
+                        <div class="box__descr-item box__descr-item_1">
+                            <p class="box__descr-text">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam. </p>
+                        </div>
+                        <div class="box__descr-item box__descr-item_2">
+                            <p class="box__descr-text">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam. </p>
+                        </div>
+                        <div class="box__descr-item box__descr-item_3">
+                            <p class="box__descr-text">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam. </p>
+                        </div>
+                        <div class="box__descr-item box__descr-item_4">
+                            <p class="box__descr-text">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__photos">
+                    <picture class="box__photo box__photo_1">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/1.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/1.jpg">
+                        <img src="img/box/1.jpg" alt="photo">
+                    </picture>
+                    <picture class="box__photo">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/2.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/2.jpg">
+                        <img src="img/box/2.jpg" alt="photo">
+                    </picture>
+                    <picture class="box__photo box__photo_2">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/3.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/3.jpg">
+                        <img src="img/box/3.jpg" alt="photo">
+                    </picture>
+                    <picture class="box__photo box__photo_4">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/4.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/4.jpg">
+                        <img src="img/box/4.jpg" alt="photo">
+                    </picture>
+                    <picture class="box__photo box__photo_3">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/5.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/5.jpg">
+                        <img src="img/box/5.jpg" alt="photo">
+                    </picture>
+                    <picture class="box__photo">
+                        <source  media="(max-width: 576px)" srcset="img/box/min/6.jpg">
+                        <source  media="(min-width: 577px)" srcset="img/box/6.jpg">
+                        <img src="img/box/6.jpg" alt="photo">
+                    </picture>
+                </div>
+            </div>
+            <svg viewBox="0 0 1220 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1220 2.08759C929.423 3.87703 846.4 16.8505 672.269 15.9558C498.138 15.0611 453.393 4.02616 311.068 6.8595C194.61 9.17788 113.163 2.21068 44.2817 0.745535H0C14.3047 0.366126 28.9833 0.420129 44.2817 0.745535H1220V2.08759Z" fill="#FFF6F6"/>
+            </svg>
+        </div>
+    </section>
+    <section class="on">
+        <div class="container">
+            <h2 class="headline headline_centered">GET YOUR GEEK ON!</h2>
+            <div class="on__wrapper">
+                <div class="on__item">
+                    <div class="underlay on__underlay">
+                        <picture class="on__photo">
+                            <source type="image/webp" srcset="img/on/1.webp">
+                            <img src="img/on/1.jpg" alt="photo">
+                        </picture>
+                        <h3 class="title on__title">Sed vel leo sed turpis</h3>
+                    </div>
+                    <p class="descr on__descr">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
+                </div>
+                <div class="on__item">
+                    <div class="underlay on__underlay">
+                        <picture class="on__photo">
+                            <source type="image/webp" srcset="img/on/2.webp">
+                            <img src="img/on/2.jpg" alt="photo">
+                        </picture>
+                        <h3 class="title on__title">lobortis pulvinar blandit</h3>
+                    </div>
+                    <p class="descr on__descr">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
+                </div>
+                <div class="on__item">
+                    <div class="underlay on__underlay">
+                        <picture class="on__photo">
+                            <source type="image/webp" srcset="img/on/3.webp">
+                            <img src="img/on/3.jpg" alt="photo">
+                        </picture>
+                        <h3 class="title on__title">vel semper neque sagittis quis</h3>
+                    </div>
+                    <p class="descr on__descr">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="every-day">
+        <div class="container">
+            <div class="every-day__wrapper">
+                <div class="every-day__col1">
+                    <div class="every-day__col1-descr">
+                        <h2 class="headline"><span>good for</span>every day</h2>
+                        <p class="descr every-day__descr">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc.</p>
+                    </div>
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_1">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/1.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/1.jpg">
+                        <img src="img/every-day/1.jpg" alt="photo">
+                    </picture>
+                    <picture class="every-day__photo every-day__photo_big">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/2.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/2.jpg">
+                        <img src="img/every-day/2.jpg" alt="photo">
+                    </picture>
+                </div>
+                <div class="every-day__col2">
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_3">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/3.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/3.jpg">
+                        <img src="img/every-day/3.jpg" alt="photo">
+                    </picture>
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_min">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/9.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/9.jpg">
+                        <img src="img/every-day/9.jpg" alt="photo">
+                    </picture>
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_4">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/4.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/4.jpg">
+                        <img src="img/every-day/4.jpg" alt="photo">
+                    </picture>
+                </div>
+                <div class="every-day__col3">
+                    <div class="every-day__sub">
+                        <picture class="every-day__photo every-day__photo_small">
+                            <source media="(max-width: 576px)" srcset="img/every-day/min/5.jpg">
+                            <source media="(min-width: 577px)" srcset="img/every-day/5.jpg">
+                            <img src="img/every-day/5.jpg" alt="photo">
+                        </picture>
+                        <picture class="every-day__photo every-day__photo_small">
+                            <source media="(max-width: 576px)" srcset="img/every-day/min/6.jpg">
+                            <source media="(min-width: 577px)" srcset="img/every-day/6.jpg">
+                            <img src="img/every-day/6.jpg" alt="photo">
+                        </picture>
+                    </div>
+                    <picture class="every-day__photo every-day__photo_7 every-day__photo_big">
+                        <source media="(max-width: 576px)" srcset="img/every-day/min/7.jpg">
+                        <source media="(min-width: 577px)" srcset="img/every-day/7.jpg">
+                        <img src="img/every-day/7.jpg" alt="photo">
+                    </picture>
+                </div>
+                <div class="every-day__col4">
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_8">
+                        <source srcset="img/every-day/8.jpg">
+                        <img src="img/every-day/8.jpg" alt="photo">
+                    </picture>
+                    <picture class="every-day__photo every-day__photo_small every-day__photo_9">
+                        <source srcset="img/every-day/9.jpg">
+                        <img src="img/every-day/9.jpg" alt="photo">
+                    </picture>
+                    <button class="btn every-day__btn">shop all</button>
+                </div>
+            </div>
+        </div>
+        <div class="container every-day__container">
+            <svg viewBox="0 0 1220 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 13.9124C290.577 12.123 373.6 -0.850549 547.731 0.0441728C721.862 0.938895 766.607 11.9738 908.932 9.1405C1025.39 6.82212 1106.84 13.7893 1175.72 15.2545H1220C1205.7 15.6339 1191.02 15.5799 1175.72 15.2545H0V13.9124Z" fill="#FFF6F6"/>
+            </svg>
+            <div class="every-day__info">
+                <div class="every-day__item">
+                    <div class="every-day__info-icon">
+                        <img src="icons/every-day/delivery-truck.svg" alt="delivery">
+                    </div>
+                    <p class="every-day__info-descr">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam.</p>
+                </div>
+                <div class="every-day__item">
+                    <div class="every-day__info-icon">
+                        <img src="icons/every-day/medal.svg" alt="medal">
+                    </div>
+                    <p class="every-day__info-descr">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam.</p>
+                </div>
+                <div class="every-day__item">
+                    <div class="every-day__info-icon">
+                        <img src="icons/every-day/package.svg" alt="package">
+                    </div>
+                    <p class="every-day__info-descr">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam.</p>
+                </div>
+                <div class="every-day__item">
+                    <div class="every-day__info-icon">
+                        <img src="icons/every-day/tshirt.svg" alt="t-shirt">
+                    </div>
+                    <p class="every-day__info-descr">Suspendisse velit nunc, consectetur non porttitor quis, molestie feugiat quam.</p>
+                </div>
+            </div>
+            <svg viewBox="0 0 1220 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1220 2.08759C929.423 3.87703 846.4 16.8505 672.269 15.9558C498.138 15.0611 453.393 4.02616 311.068 6.8595C194.61 9.17788 113.163 2.21068 44.2817 0.745535H0C14.3047 0.366126 28.9833 0.420129 44.2817 0.745535H1220V2.08759Z" fill="#FFF6F6"/>
+            </svg>
+        </div>
+    </section>
+    <section class="plan">
+        <div class="container">
+            <h2 class="headline headline_centered">Select a plan</h2>
+            <div class="descr descr_sub">New subscribers receive our <span>GEEK FUEL BOX</span> (&#36;122 + value) as their first box!</div>
+            <div class="plan__wrapper">
+                <div class="plan__item">
+                    <h3 class="title title_left">Month-to-Month</h3>
+                    <div class="plan__price"><span>&#x24;26</span>/ month</div>
+                    <div class="plan__photo">
+                        <img src="img/plan/1.png" alt="t-shirt">
+                    </div>
+                    <h4 class="plan__terms">Billed monthly</h4>
+                    <ul class="plan__terms-list">
+                        <li class="plan__terms-checked">Delivered monthly</li>
+                        <li class="plan__terms-crossed">Save &#x24;18 compared to monthly</li>
+                        <li class="plan__terms-crossed">Free bonus box (&#x24;125 value)</li>
+                    </ul>
+                    <button class="btn plan__btn">select a plan</button>
+                </div>
+                <div class="plan__item">
+                    <div class="underlay plan__underlay">
+                        <h3 class="title title_left">Month-to-Month</h3>
+                        <div class="plan__price"><span>&#x24;26</span>/ month</div>
+                        <div class="plan__photo">
+                            <img src="img/plan/2.png" alt="t-shirt">
+                        </div>
+                        <h4 class="plan__terms">Prepay &#x24;72 for 3 boxes</h4>
+                        <ul class="plan__terms-list">
+                            <li class="plan__terms-checked">Delivered monthly</li>
+                            <li class="plan__terms-checked">Save &#x24;18 compared to monthly</li>
+                            <li class="plan__terms-crossed">Free bonus box (&#x24;125 value)</li>
+                        </ul>
+                    </div>
+                    <button class="btn plan__btn">select a plan</button>
+                </div>
+                <div class="plan__item">
+                    <div class="underlay plan__underlay">
+                        <h3 class="title title_left">Month-to-Month</h3>
+                        <div class="plan__price"><span>&#x24;26</span>/ month</div>
+                        <div class="plan__photo">
+                            <img src="img/plan/3.png" alt="t-shirt">
+                        </div>
+                        <h4 class="plan__terms">Prepay &#x24;138 for 6 boxes</h4>
+                        <ul class="plan__terms-list">
+                            <li class="plan__terms-checked">Delivered monthly</li>
+                            <li class="plan__terms-checked">Save &#x24;18 compared to monthly</li>
+                            <li class="plan__terms-checked">Free bonus box (&#x24;125 value)</li>
+                        </ul>
+                        <button class="btn plan__btn">select a plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="descr descr_sub">Your plan automatically renews.<br><span>You can easily skip, pause, or cancel your subscription at any time.</span> </div>
+        </div>
+    </section>
+    <section class="first">
+        <div class="container">
+            <div class="first__wrapper">
+                <div class="first__descr">
+                    <h2 class="headline">FIRST MONTH<br class="first_small-screen">&nbsp;REVEAL</h2>
+                    <p class="descr first__text1">Cras eu dapibus libero. Duis semper luctus pellentesque. Curabitur scelerisque, quam vel vestibulum rhoncus, nisl ligula tincidunt neque, sit amet rhoncus lectus nunc ut urna. Fusce nulla dolor, volutpat eget ultrices a, semper vitae felis.</p>
+                    <p class="descr first__text2">Cras non sapien justo. Praesent blandit dignissim lacus, sit amet pulvinar enim vestibulum non. Nunc non odio sit amet ipsum sodales porta. Nam tempus nec ex a placerat. Vivamus tincidunt dolor et nisi euismod ullamcorper. Ut mattis volutpat justo convallis aliquet.</p>
+                    <button class="btn first__btn">learn more</button>
+                </div>
+                <div class="first__photo">
+                    <picture class="first__photo-item">
+                        <source srcset="img/first.jpg">
+                        <img src="img/first.jpg" alt="photo">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="swiper swiper1 slider__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider__slide">
+                    <picture class="slider__photo">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.webp">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.webp">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.jpg">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.jpg">
+                        <img src="img/every-day/bg.jpg" alt="slider">
+                    </picture>
+                </div>
+                <div class="swiper-slide slider__slide">
+                    <picture class="slider__photo">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.webp">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.webp">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.jpg">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.jpg">
+                        <img src="img/every-day/bg.jpg" alt="slider">
+                    </picture>
+                </div>
+                <div class="swiper-slide slider__slide">
+                    <picture class="slider__photo">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.webp">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.webp">
+                        <source media="(max-width: 768px)" srcset="img/every-day/slider_mini.jpg">
+                        <source media="(min-width: 769px)" srcset="img/every-day/bg.jpg">
+                        <img src="img/every-day/bg.jpg" alt="slider">
+                    </picture>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="slider__descr">
+                        <h2 class="headline slider__headline"><span>good for</span>every day</h2>
+                        <p class="descr slider__text">Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc.</p>
+                        <button class="btn slider__btn">shop all</button>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                </div>
+            </div>
+    </section>
+    <section class="recent">
+        <div class="container">
+            <h2 class="headline headline_centered">recent T-Shirts designs</h2>
+            <div class="recent__wrapper">
+                <div class="recent__item">
+                    <div class="recent__photo">
+                        <picture>
+                            <source srcset="img/recent/1.png">
+                            <img src="img/recent/1.png" alt="t-shirt">
+                        </picture>
+                        <div class="recent__overlay"></div>
+                        <button class="btn recent__btn">add to cart</button>
+                    </div>
+                    <div class="recent__options">
+                        <h3 class="title">Free Rivers Work Better!</h3>
+                        <div class="recent__price">&#36;26.99 USD</div>
+                        <ul class="recent__colors">
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="recent__item">
+                    <div class="recent__photo">
+                        <picture>
+                            <source srcset="img/recent/2.png">
+                            <img src="img/recent/2.png" alt="t-shirt">
+                        </picture>
+                        <div class="recent__overlay"></div>
+                        <button class="btn recent__btn">add to cart</button>
+                    </div>
+                    <div class="recent__options">
+                        <h3 class="title">Free Rivers Work Better!</h3>
+                        <div class="recent__price">&#36;26.99 USD</div>
+                        <ul class="recent__colors">
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recent__item">
+                    <div class="recent__photo">
+                        <picture>
+                            <source srcset="img/recent/3.png">
+                            <img src="img/recent/3.png" alt="t-shirt">
+                        </picture>
+                        <div class="recent__overlay"></div>
+                        <button class="btn recent__btn">add to cart</button>
+                    </div>
+                    <div class="recent__options">
+                        <h3 class="title">Free Rivers Work Better!</h3>
+                        <div class="recent__price">&#36;26.99 USD</div>
+                        <ul class="recent__colors">
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                            <li><a href="#" class="recent__color"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="compliment">
+        <h2 class="headline headline_centered compliment__headline">WE LOVE A GOOD COMPLIMENT</h2>
+        <div class="swiper swiper2 compliment__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">              
+                    <blockquote>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</blockquote>
+                    <div class="compliment__name">olivia j</div>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</blockquote>
+                    <div class="compliment__name">olivia j</div>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</blockquote>
+                    <div class="compliment__name">olivia j</div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination2"></div>
+        </div>
+    </section>
+    <section class="feature">
+        <h2 class="headline headline_centered feature__headline">featured fandoms</h2>
+        <div class="container">
+            <div class="feature__wrapper">
+                <div class="feature__fandom">
+                    <a href="https://www.dccomics.com" target="_blank" rel="noopener noreferrer">
+                        <img src="icons/fandoms/DC.svg" alt="dc">
+                    </a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://www.marvel.com" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/marvel.svg" alt="marvel"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://super7.com/" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/super7.png" alt="super7"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://mondoshop.com" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/mondo.svg" alt="mondo"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://www.playstation.com/en-my/" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/PlayStation.svg" alt="pc"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://www.nintendo.com/" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/nintendo.svg" alt="nintendo"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://hasbropulse.com/" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/hasbro-2.svg" alt="hashbro"></a>
+                </div>
+                <div class="feature__fandom">
+                    <a href="https://www.20thcenturystudios.com" target="_blank" rel="noopener noreferrer"><img src="icons/fandoms/20thCS.svg" alt="20th"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="icons/footer-logo.svg" alt="logo">
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#">bundles</a></li>
+                        <li class="footer__menu-item"><a href="#">exclusive tees</a></li>
+                        <li class="footer__menu-item"><a href="#">mondo</a></li>
+                        <li class="footer__menu-item"><a href="#">collectibles</a></li>
+                        <li class="footer__menu-item"><a href="#">TEE CLUB</a></li>
+                        <li class="footer__menu-item"><a href="#">GHOSTBUSTERS</a></li>
+                        <li class="footer__menu-item"><a href="#">&#127873; GIFT</a></li>
+                        <li class="footer__menu-item"><a href="#">login</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__form">
+                    <h3 class="footer__form-title">Sign up for our news & updates</h3>
+                    <form action="#" class="form">
+                        <input type="email" id="email" name="email" autocomplete="off" class="form__input">
+                        <label for="email" class="form__input-name"><span class="form__input-content">Enter your email to subscribe</span></label>
+                        <button class="form__btn">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__dividing-line"></div>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__copyright">&copy; 2021 Geek Fuel, LLC. All Rights Reserved.</div>
+                <div class="footer__links">
+                    <a href="#" class="footer__policy">Privacy Policy</a>
+                    <a href="#" class="footer__terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

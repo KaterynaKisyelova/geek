@@ -1,0 +1,32 @@
+.limited {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 100px 0;
+        column-gap: 20px;
+    }
+    &__list {
+        list-style-type: none;
+        max-width: 595px;
+        &-item {
+            width: 100%;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                background: url('../icons/checkmark.svg') center center/cover no-repeat;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &_small-screen {
+        display: none;
+    }
+}

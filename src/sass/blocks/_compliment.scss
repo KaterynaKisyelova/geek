@@ -1,0 +1,57 @@
+.compliment {
+    min-height: 526px;
+    padding-top: 100px;
+    background-color: var(--back-color-2);
+    overflow-x: hidden;
+    &__name {
+        font-family: 'DIN Pro';
+        line-height: 18px;
+        font-size: 20px;
+        color: #666;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; 
+        margin-top: 30px;     
+    }
+    &__swiper {
+        overflow: visible;
+        margin-top: 50px;
+
+    }
+    .swiper {
+        &-slide {
+            max-width: 595px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 33px;
+            text-align: center;
+            opacity: 0.2;
+            transition: all .5s;
+            &-active {
+                opacity: 1;
+            }
+        }
+    }
+    .swiper-pagination-bullets{
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -68px;
+    }
+    .swiper-pagination-bullet {
+        border: 1px solid #0d0d0d;
+        background-color: transparent;
+        width: 10px;
+        height: 10px;
+        margin: 0 20px 0 0!important;
+        &-active {
+            background-color: #0d0d0d;
+        }
+    }
+    &__headline {
+        letter-spacing: 0.05em;
+        color: var(--main-color);
+        font-size: 20px;
+        line-height: 18px;
+    }
+}

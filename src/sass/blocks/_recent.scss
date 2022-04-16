@@ -1,0 +1,113 @@
+.recent {
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    &__item {
+        max-width: 387px;
+        min-height: 520px;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__photo {
+        position: relative;
+        img, source {
+            width: 100%;
+        }
+        &:hover .recent__overlay {
+            transition: all .4s;
+            opacity: 0.3;
+            cursor: url('../icons/cursor.svg'), auto;
+        }
+        &:hover .recent__btn {
+            transition: all .4s;
+            opacity: 1;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0d0d0d;
+        opacity: 0;
+        z-index: 2;
+    }
+    &__btn {
+        width: calc(100% - 20px);
+        position: absolute;
+        right: 10px;
+        left: 10px;
+        bottom: 10px;
+        opacity: 0;
+        font-size: 22px;
+        line-height: 20px;
+        background-color: #fff;
+        color: var(--text-color);
+        z-index: 3;
+        &:hover {
+            box-shadow: 0 0 10px #fff;
+        }
+    }
+    &__options {
+        margin-top: 30px;
+        text-align: center;
+    }
+    &__price {
+        margin-top: 16px;
+    }
+    &__colors {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 16px;
+        li {
+            display: inline-block;
+            margin: 0 4px;
+        }
+        li:nth-child(1) a {
+            background-color: #0d0d0d;
+            border: 1px solid #0d0d0d;
+        }
+        li:nth-child(2) a {
+            background-color:#D7D7D7;
+            border: 1px solid #D7D7D7;
+        }
+        li:nth-child(3) a {
+            background-color:#EB5757;
+            border: 1px solid #EB5757;
+        }
+        li:nth-child(4) a {
+            background-color:#F2C94C;
+            border: 1px solid #F2C94C;
+        }
+        li:nth-child(5) a {
+            background-color: #fff;
+            border: 1px solid #E0E0E0;
+        }
+    }
+    &__color {
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        &:hover {
+            &:before {
+                content: '';
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                border: 1px solid #D7D7D7;
+                border-radius: 50%;
+                top:-5px;
+                left: -5px;
+            }
+        }
+    }
+}
